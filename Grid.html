@@ -1,0 +1,110 @@
+<doctype html>
+
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>my grid page</title>
+        <style>
+            body {
+                background: lavender;
+                color: blueviolet;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 200px 1fr 150px;
+                gap: 0px 10px;
+                grid-template-areas:
+                    "Header Header Header"
+                    "left Main right"
+                    "Footer Footer Footer";
+            }
+
+            .Header {
+                grid-area: Header;
+                background-color: aquamarine;
+            }
+
+            .Footer {
+                grid-area: Footer;
+                background-color: aquamarine;
+            }
+
+            .Main {
+                grid-area: Main;
+                background-color: darkcyan;
+            }
+
+            .right {
+                grid-area: right;
+                background-color: aqua;
+            }
+
+            .left {
+                grid-area: left;
+                background-color: aqua;
+            }
+
+            body {
+                font-family: "Rock Salt", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            h1 {font-size: 60px;}
+
+            ul {
+                margin-left: 0;
+                padding-left: 0;
+                list-style-type: none;
+            }
+
+            a {
+                color: goldenrod;
+                text-decoration: none;
+                font-size: 20px;
+                transition: 2s font-size, 1s color;
+                display: block;
+                background: grey;
+                width: 100px;
+                height: 50px;
+                margin: 20px;
+                border: 2px solid red;
+                text-align: center;
+                box-shadow: 0 0 0 transparent;
+                transition: .5s box-shadow, .5s border-radius;
+
+            }
+
+            a:hover {
+                color: coral;
+                text-decoration: underline;
+                text-transform: uppercase;
+                font-size: 28px;
+                box-shadow: 0 5px 10px black;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="Header">
+                <h1>Womp womp</h1>
+            </div>
+            <div class="Footer">
+                <li><a href="Frick.html">Frick</a></li>
+                <li><a href="boxes.html">BOX</a></li>
+                <li><a href="Images.html">Cool stuff</a></li>
+                <li><a href="index.html">Home</a></li>
+            </div>
+            <div class="Main"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+          </div>
+    </body>
+
+    </html>
